@@ -10,4 +10,5 @@
   function prompt($typeRequired)
   {
     if($typeRequired == "yn") return "> (y/n) : ";
+    if($typeRequired == "123") return "> (1/2/3) : ";
   }
