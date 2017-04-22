@@ -22,8 +22,6 @@
   print "Choose scenario:\n";
   print "1 - Short, Westy's War, 1965-1967\n";
   print "2 - Medium, Westy's War, 1968-1972\n";
-  print "3 - Long, Nam, 1965-1972\n";
+  print "3 - Long, Nam, 1965-1972 (Default)\n";
 
   $gs = new gameState(readLine(prompt("123")));
-
-  print "test: " . $gs->scenario . "\n";

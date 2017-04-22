@@ -6,7 +6,15 @@ class gameState
 {
   public $scenario;
 
-  function __construct($scenario)
+  // long set of values
+  public resourceMarkers = array('ARVN', 'NV', 'VC'); // 0 to 75, no US
+  public $aid;
+  public $totalEcon;
+  public $patronage;
+  public $theTrail;
+  public $USPolicy;
+
+  function __construct($scenario=3)
   {
     if($scenario == 1)
     {
@@ -16,14 +24,15 @@ class gameState
     {
       $this->scenario = "medium";
     }
-    elseif($scenario == 3)
-    {
-      $this->scenario = "long";
-    }
-    else // default case
+    else
     {
       $this->$scenario = "long";
-      print "Unknown scenario, defaulting to 'Nam'.\n";
     }
+  }
+
+  // virtual values (markers in game, but not direct ones)
+  function score($faction)
+  {
+    return -1;
   }
 }
