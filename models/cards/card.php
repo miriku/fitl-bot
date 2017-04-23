@@ -2,12 +2,12 @@
   // abstract class that defines behaviors for all other card classes
   class Card
   {
-    $cardNumber;
-    $title;
-    $year;
-    $eventText;
-    $shadedText;
-    $lastingEffect;
+    public $cardNumber;
+    public $title;
+    public $year;
+    public $eventText;
+    public $shadedText;
+    public $lastingEffect;
 
     // returns some permutation of ['ARVN', 'NV', 'US', 'VC']
     function returnPlayOrder()
@@ -25,6 +25,6 @@
     // same as above but for shaded events
     function performShadedEvent($gameState)
     {
-      
+
     }
   }

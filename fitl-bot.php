@@ -11,17 +11,17 @@
   $vcBot = 0;
   // figure out which bots are running
   print "ARVN bot?\n";
-  $arvnBot = yesNoToInt(readline(prompt("yn")));
+  $arvnBot = yesNoToInt(prompt("yn"));
   print "NV bot?\n";
-  $nvBot = yesNoToInt(readline(prompt("yn")));
+  $nvBot = yesNoToInt(prompt("yn"));
   print "US bot?\n";
-  $usBot = yesNoToInt(readline(prompt("yn")));
+  $usBot = yesNoToInt(prompt("yn"));
   print "VC bot?\n";
-  $vcBot = yesNoToInt(readline(prompt("yn")));
+  $vcBot = yesNoToInt(prompt("yn"));
 
   print "Choose scenario:\n";
   print "1 - Short, Westy's War, 1965-1967\n";
   print "2 - Medium, Westy's War, 1968-1972\n";
   print "3 - Long, Nam, 1965-1972 (Default)\n";
 
-  $gs = new gameState(readLine(prompt("123")));
+  $gs = new gameState(prompt("123"));

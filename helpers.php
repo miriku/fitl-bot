@@ -9,6 +9,24 @@
   //
   function prompt($typeRequired)
   {
-    if($typeRequired == "yn") return "> (y/n) : ";
-    if($typeRequired == "123") return "> (1/2/3) : ";
+    $answer = "";
+    if($typeRequired == "yn")
+    {
+      while($answer != "y"  &&
+            $answer != "n")
+      {
+        $answer = readLine("> (y/n) : ");
+      }
+      return $answer;
+    }
+    if($typeRequired == "123")
+    {
+      while($answer != "1" &&
+            $answer != "2" &&
+            $answer != "3")
+      {
+        $answer = readLine("> (1/2/3) : ");
+      }
+      return $answer;
+    }
   }

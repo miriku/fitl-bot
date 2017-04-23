@@ -7,7 +7,7 @@ class gameState
   public $scenario;
 
   // long set of values
-  public resourceMarkers = array('ARVN', 'NV', 'VC'); // 0 to 75, no US
+  public $resourceMarkers = array('ARVN', 'NV', 'VC'); // 0 to 75, no US
   public $aid;
   public $totalEcon;
   public $patronage;
