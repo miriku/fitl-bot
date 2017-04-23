@@ -7,4 +7,11 @@
     // support is either "active support", "passive support", "neutral",
     // "passive oppose", or "active oppose"
     public $support;
+
+    function __construct($_isCoastal, $_country, $_pop)
+    {
+      parent::__construct($_isCoastal, $_country);
+      $this->pop = $_pop;
+    }
+
   }
