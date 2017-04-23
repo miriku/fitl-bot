@@ -11,9 +11,9 @@
     // "passive oppose", or "active oppose"
     public $support;
 
-    function __construct($_isCoastal, $_country, $_pop)
+    function __construct($_name, $_isCoastal, $_country, $_pop)
     {
-      parent::__construct($_isCoastal, $_country);
+      parent::__construct($_name, $_isCoastal, $_country);
       $this->pop = $_pop;
       $this->type = $_type;
     }
