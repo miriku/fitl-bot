@@ -12,6 +12,7 @@ class gameState
   public $totalEcon;
   public $patronage;
   public $theTrail;
+  public $RVNLeader;
   public $USPolicy;
   public $map;
 
