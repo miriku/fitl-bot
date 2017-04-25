@@ -16,8 +16,8 @@
     function __construct($_name, $_isCoastal, $_country)
     {
       $this->name = $_name;
-      if($_isCoastal=="coastal") $this->$isCoastal = 1;
-      else $this->$isCoastal = 0;
+      if($_isCoastal=="coastal") $this->isCoastal = 1;
+      else $this->isCoastal = 0;
       $this->country = $_country;
     }
 

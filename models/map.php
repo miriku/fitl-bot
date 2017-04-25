@@ -36,5 +36,30 @@
       $place['Route 1 - Qui Nhon to Da Nang'] = new LoC('Route 1 - Qui Nhon to Da Nang', "coastal","highway",1);
       $place['Route 14 - Dak To to Da Nang'] = new LoC('Route 14 - Dak To to Da Nang', "inland","highway",0);
       $place['Route 1 - Route 9'] = new LoC('Route 1 - Route 9', "coastal","highway",1);
+
+      // provinces
+      // constructor is "name, isCoastal, country, pop"
+      $place['Kien Giang - An Xuyen'] = new province('Kien Giang - An Xuyen', "coastal", "south", "lowland", 2);
+      $place['Ba Xuyen'] = new province('Ba Xuyen', 'coastal', 'south', "lowland", 1);
+      $place['Kien Phong'] = new province('Kien Phong', 'inland', 'south', "lowland", 2);
+      $place['Kien Hoa - Vinh Binh'] = new province('Kien Hoa - Vinh Binh', 'coastal', 'south', "lowland", 2);
+      $place['Sihanoukville'] = new province('Sihanoukville', 'coastal', 'cambodia', "jungle", 0);
+      $place['The Parrot\'s Beak'] = new province('The Parrot\'s Beak', 'inland', 'cambodia', "jungle", 0);
+      $place['Tay Ninh'] = new province('Tay Ninh', 'inland', 'south', "jungle", 2);
+      $place['Phuoc Long'] = new province('Phuoc Long', 'inland', 'south', "jungle", 0);
+      $place['Quang Duc - Long Khahn'] = new province('Quang Duc - Long Khahn', 'inland', 'south', "jungle", 0);
+      $place['Binh Tuy - Binh Thuan'] = new province('Binh Tuy - Binh Thuan', 'coastal', 'south', "jungle", 1);
+      $place['The Fishhook'] = new province('The Fishhook', 'inland', 'cambodia', "jungle", 0);
+      $place['Pleiku - Darlac'] = new province('Pleiku - Darlac', 'inland', 'south', "highland", 1);
+      $place['Khanh Hoa'] = new province('Khanh Hoa', 'coastal', 'south', "highland", 1);
+      $place['Northeast Cambodia'] = new province('Northeast Cambodia', 'inland', 'cambodia', "jungle", 0);
+      $place['Phu Bon - Phu Yen'] = new province('Phu Bon - Phu Yen', 'coastal', 'south', "lowland", 1);
+      $place['Binh Dinh'] = new province('Binh Dinh', 'coastal', 'south', 'highland', 2);
+      $place['Southern Laos'] = new province('Southern Laos', 'inland', 'laos', 'jungle', 0);
+      $place['Quang Trin - Quang Ngai'] = new province('Quang Trin - Quang Ngai', 'coastal', 'south', 'lowland', 2);
+      $place['Quang Nam'] = new province('Quang Nam', 'coastal', 'south', 'highland', 1);
+      $place['Central Laos'] = new province('Central Laos', 'inland', 'laos', 'inland', 0);
+      $place['Quang Tri - Thua Thien'] = new province('Quang Tri - Thua Thien', 'coastal', 'south', 'highland', 2);
+      $place['North Vietnam'] = new province('North Vietnam', 'coastal', 'north', 'highland', 0);
     }
   }

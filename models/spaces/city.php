@@ -1,5 +1,5 @@
 <?php
-  class city
+  class city extends space
   {
     // population is either 1 2 or 6
     public $pop;

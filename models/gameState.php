@@ -13,6 +13,7 @@ class gameState
   public $patronage;
   public $theTrail;
   public $USPolicy;
+  public $map;
 
   function __construct($scenario=3)
   {
@@ -28,6 +29,8 @@ class gameState
     {
       $this->$scenario = "long";
     }
+
+    $this->map = new map();
   }
 
   // virtual values (markers in game, but not direct ones)
