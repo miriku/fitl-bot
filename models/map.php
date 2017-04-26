@@ -74,17 +74,17 @@
       array_push($place["Da Nang"]->adjacents, $place['Route 1 - Qui Nhon to Da Nang']);
       array_push($place["Da Nang"]->adjacents, $place['Route 14 - Dak To to Da Nang']);
 
-      array_push($place["Qui Nhon"])->adjacents, $place['Route 1 - Qui Nhon to Da Nang']);
-      array_push($place["Qui Nhon"])->adjacents, $place['Route 1 - Cam Rahn to Qui Nhon']);
-      array_push($place["Qui Nhon"])->adjacents, $place['Route 19']);
-      array_push($place["Qui Nhon"])->adjacents, $place['Binh Dinh']);
-      array_push($place["Qui Nhon"])->adjacents, $place['Phu Bon - Phu Yen']);
+      array_push($place["Qui Nhon"]->adjacents, $place['Route 1 - Qui Nhon to Da Nang']);
+      array_push($place["Qui Nhon"]->adjacents, $place['Route 1 - Cam Rahn to Qui Nhon']);
+      array_push($place["Qui Nhon"]->adjacents, $place['Route 19']);
+      array_push($place["Qui Nhon"]->adjacents, $place['Binh Dinh']);
+      array_push($place["Qui Nhon"]->adjacents, $place['Phu Bon - Phu Yen']);
 
-      array_push($place["Cam Rahn"])->adjacents, $place['Khanh Hoa']);
-      array_push($place["Cam Rahn"])->adjacents, $place['Binh Tuy - Binh Thuan']);
-      array_push($place["Cam Rahn"])->adjacents, $place['Route 11']);
-      array_push($place["Cam Rahn"])->adjacents, $place['Route 1 - Cam Rahn to Qui Nhon']);
-      array_push($place["Cam Rahn"])->adjacents, $place['Route 1 - Saigon to Cam Rahn']);
+      array_push($place["Cam Rahn"]->adjacents, $place['Khanh Hoa']);
+      array_push($place["Cam Rahn"]->adjacents, $place['Binh Tuy - Binh Thuan']);
+      array_push($place["Cam Rahn"]->adjacents, $place['Route 11']);
+      array_push($place["Cam Rahn"]->adjacents, $place['Route 1 - Cam Rahn to Qui Nhon']);
+      array_push($place["Cam Rahn"]->adjacents, $place['Route 1 - Saigon to Cam Rahn']);
 
       // to do, cities:
       // can tho, saigon, an loc, kontum
@@ -111,6 +111,5 @@
       array_push($place["Kien Phong"]->adjacents, $place['Saigon']);
       array_push($place["Kien Phong"]->adjacents, $place['Mekong - Chau Doc to Can Tho']);
       array_push($place["Kien Phong"]->adjacents, $place['Mekong - Can Tho to Saigon']);
-
     }
   }
