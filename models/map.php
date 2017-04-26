@@ -34,6 +34,7 @@
       $place['Route 19'] = new LoC('Route 19', "inland","highway",1);
       $place['Route 14 - Kontum to Dak To'] = new LoC('Route 14 - Kontum to Dak To', "inland","highway",1);
       $place['Route 1 - Qui Nhon to Da Nang'] = new LoC('Route 1 - Qui Nhon to Da Nang', "coastal","highway",1);
+      $place['Route 1 - Hue to Da Nang'] = new LoC('Route 1 - Hue to Da Nang', "coastal","highway",1);
       $place['Route 14 - Dak To to Da Nang'] = new LoC('Route 14 - Dak To to Da Nang', "inland","highway",0);
       $place['Route 1 - Route 9'] = new LoC('Route 1 - Route 9', "coastal","highway",1);
 
@@ -63,6 +64,31 @@
       $place['North Vietnam'] = new province('North Vietnam', 'coastal', 'North', 'Highland', 0);
 
       // add adjacencies
+      array_push($place["Hue"]->adjacents, $place['Quang Tri - Thua Thien']);
+      array_push($place["Hue"]->adjacents, $place['Route 1 - Route 9']);
+      array_push($place["Hue"]->adjacents, $place['Route 1 - Hue to Da Nang']);
+
+      array_push($place["Da Nang"]->adjacents, $place['Route 1 - Hue to Da Nang']);
+      array_push($place["Da Nang"]->adjacents, $place['Quang Trin - Quang Ngai']);
+      array_push($place["Da Nang"]->adjacents, $place['Quang Nam']);
+      array_push($place["Da Nang"]->adjacents, $place['Route 1 - Qui Nhon to Da Nang']);
+      array_push($place["Da Nang"]->adjacents, $place['Route 14 - Dak To to Da Nang']);
+
+      array_push($place["Qui Nhon"])->adjacents, $place['Route 1 - Qui Nhon to Da Nang']);
+      array_push($place["Qui Nhon"])->adjacents, $place['Route 1 - Cam Rahn to Qui Nhon']);
+      array_push($place["Qui Nhon"])->adjacents, $place['Route 19']);
+      array_push($place["Qui Nhon"])->adjacents, $place['Binh Dinh']);
+      array_push($place["Qui Nhon"])->adjacents, $place['Phu Bon - Phu Yen']);
+
+      array_push($place["Cam Rahn"])->adjacents, $place['Khanh Hoa']);
+      array_push($place["Cam Rahn"])->adjacents, $place['Binh Tuy - Binh Thuan']);
+      array_push($place["Cam Rahn"])->adjacents, $place['Route 11']);
+      array_push($place["Cam Rahn"])->adjacents, $place['Route 1 - Cam Rahn to Qui Nhon']);
+      array_push($place["Cam Rahn"])->adjacents, $place['Route 1 - Saigon to Cam Rahn']);
+
+      // to do, cities:
+      // can tho, saigon, an loc, kontum
+
       array_push($place["Kien Giang - An Xuyen"]->adjacents, $place['Route 4 - Ba Xuyen to Can Tho']);
       array_push($place["Kien Giang - An Xuyen"]->adjacents, $place['Mekong - Chau Doc to Can Tho']);
       array_push($place["Kien Giang - An Xuyen"]->adjacents, $place['Ba Xuyen']);
@@ -70,5 +96,21 @@
       array_push($place["Kien Giang - An Xuyen"]->adjacents, $place['Sihanoukville']);
       array_push($place["Kien Giang - An Xuyen"]->adjacents, $place['The Parrot\'s Beak']);
       array_push($place["Kien Giang - An Xuyen"]->adjacents, $place['Kien Phong']);
+
+      array_push($place["Ba Xuyen"]->adjacents, $place['Route 4 - Ba Xuyen to Can Tho']);
+      array_push($place["Ba Xuyen"]->adjacents, $place['Kien Giang - An Xuyen']);
+      array_push($place["Ba Xuyen"]->adjacents, $place['Can Tho']);
+      array_push($place["Ba Xuyen"]->adjacents, $place['Kien Hoa - Vinh Binh']);
+      array_push($place["Ba Xuyen"]->adjacents, $place['Mekong - Can Tho to Long Phu']);
+
+      array_push($place["Kien Phong"]->adjacents, $place['Can Tho']);
+      array_push($place["Kien Phong"]->adjacents, $place['Kien Giang - An Xuyen']);
+      array_push($place["Kien Phong"]->adjacents, $place['Kien Hoa - Vinh Binh']);
+      array_push($place["Kien Phong"]->adjacents, $place['The Parrot\'s Beak']);
+      array_push($place["Kien Phong"]->adjacents, $place['Tay Ninh']);
+      array_push($place["Kien Phong"]->adjacents, $place['Saigon']);
+      array_push($place["Kien Phong"]->adjacents, $place['Mekong - Chau Doc to Can Tho']);
+      array_push($place["Kien Phong"]->adjacents, $place['Mekong - Can Tho to Saigon']);
+
     }
   }
